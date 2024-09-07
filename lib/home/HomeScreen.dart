@@ -56,10 +56,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 label: AppLocalizations.of(context)!.tasbeh),
             BottomNavigationBarItem(
                 backgroundColor: Theme.of(context).primaryColor,
-                icon: const ImageIcon(AssetImage('assets/images/ic_radio.png')),
-                label: AppLocalizations.of(context)!.radio),
-            BottomNavigationBarItem(
-                backgroundColor: Theme.of(context).primaryColor,
                 icon: const Icon(Icons.settings),
                 label: AppLocalizations.of(context)!.settings),
           ],
@@ -68,5 +64,5 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-  List<Widget> tabs = [QuranTab(), HadethTab(), TasbehTab(), RadioTab(),SettingsTab()];
+  List<Widget> tabs = [QuranTab(), HadethTab(), TasbehTab(),SettingsTab()];
 }

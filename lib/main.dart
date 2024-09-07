@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_c9_mon/chapterDetails/ChapterDetailsScreen.dart';
 import 'package:islami_c9_mon/home/HomeScreen.dart';
 import 'package:islami_c9_mon/providers/SettingsProvider.dart';
+import 'package:islami_c9_mon/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'HadethDetails/HadethDetailsScreen.dart';
 import 'MyThemeData.dart';
@@ -31,9 +32,10 @@ class MyApp extends StatelessWidget {
       theme: MyThemeData.lightTheme,
       darkTheme:MyThemeData.darkTheme ,
       themeMode: settingsProvider.currentTheme,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
         HomeScreen.routeName: (_) => const HomeScreen(),
+        SplashScreen.routeName: (_) => const SplashScreen(),
         ChapterDetailsScreen.routeName: (_) => const ChapterDetailsScreen(),
         HadethDetailsScreen.routeName : (_) => const HadethDetailsScreen()
       },

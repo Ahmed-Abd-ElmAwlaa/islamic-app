@@ -139,7 +139,7 @@ class QuranTab extends StatelessWidget {
             ),
             //width: double.infinity,
             child:Text(
-              'Chapter Name',
+              'اسم السورة',
               style: Theme.of(context).textTheme.titleMedium,
             ),
         ),
