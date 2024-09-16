@@ -1,7 +1,11 @@
 # islamic_app
 
+Technologies : Theming and Localization , State Management (Provider).
+Features : An application that displays all the chapters of the Quran and hadiths ,
+      and contains dark , light themes , Arabic and English languages.
+      
+## Screens for this app :
 
-## Screens for this app
 <div>
 <img src="https://github.com/user-attachments/assets/c75f4b2e-128c-413d-ac8a-e0d0e8fa043a" width="300">
 <img src="https://github.com/user-attachments/assets/a9329372-7fc6-4696-9520-f08fb9c26f63" width="300">
