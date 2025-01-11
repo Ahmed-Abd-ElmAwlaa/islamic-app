@@ -37,7 +37,8 @@ class _ChapterDetailsScreenState extends State<ChapterDetailsScreen> {
           body: verses.isEmpty
               ? const Center(child: CircularProgressIndicator())
               : Card(
-                  margin: const EdgeInsets.symmetric(vertical: 48, horizontal: 12),
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 48, horizontal: 12),
                   child: ListView.separated(
                       itemBuilder: (context, index) {
                         return VerseWidget(verses[index], index + 1);

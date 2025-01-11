@@ -3,12 +3,20 @@ import 'package:islami_c9_mon/chapterDetails/ChapterDetailsScreen.dart';
 import 'package:islami_c9_mon/home/HomeScreen.dart';
 import 'package:islami_c9_mon/providers/SettingsProvider.dart';
 import 'package:islami_c9_mon/splash_screen.dart';
+import 'package:islami_c9_mon/work_manager_service.dart';
 import 'package:provider/provider.dart';
 import 'HadethDetails/HadethDetailsScreen.dart';
 import 'MyThemeData.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-void main() {
+import 'local_notification_service.dart';
+
+void main()async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Future.wait([
+    LocalNotificationService.initialization(),
+    WorkManagerService().init(),
+  ]);
   runApp(
     ChangeNotifierProvider(
       create:(context) =>SettingsProvider(),
